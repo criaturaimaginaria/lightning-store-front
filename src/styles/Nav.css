@@ -1,0 +1,124 @@
+
+.Nav{
+    display: flex;
+    background-color: #2a2a2a;
+    height: 5vw;
+    align-items: center;
+}
+
+.NavLogoContainer{
+    margin-right: auto;
+    color: #fff;
+    cursor: pointer;
+}
+.NavLogoContainer p{
+    font-size: 1.4vw;
+    font-weight: 400;
+    margin-left: 2vw;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navLinksContainer{
+    margin-left: auto;
+    margin-right: 10%;
+    font-family: 'Noto Serif', serif;
+}
+.navLinksContainer a {
+    margin:4em;
+}
+
+.Nav a{
+    color: rgb(255, 254, 242);
+    text-decoration: none;
+}
+
+
+.dp{
+   position: absolute;
+}
+.dp::after {
+    content: "𝄰";
+    text-align:center;
+    background-color: #2a2a2a00;
+    color: #66000000;
+    position: absolute;
+    margin-top: -4.5vw;
+    margin-left: 3.2vw;
+    width: 7em;
+    height: 3.5em;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    pointer-events: none;
+    animation: effects 0.5s ease-in-out 1;
+  }
+  @keyframes effects {
+    0% {color: #000000 ;background-color: #2a2a2a00;}
+        
+    50% {color: #fff; background-color: #ffa6005a;}
+    100% {color: #000000; background-color: #2a2a2a00;}
+  }
+
+.da{
+position: absolute;
+}
+.da::after {
+    content: "𝄫";
+    text-align: center;
+    background-color: #2a2a2a00;
+    color: #66000000;
+    position: absolute;
+    margin-top: -4.2vw;
+    margin-left: 1vw;
+    width: 7em;
+    height: 3.5em;
+    pointer-events: none;
+    border-radius: 10px;
+    left: 0%;
+    
+    animation: effect 0.5s ease-in-out 1;
+  }
+  @keyframes effect {
+    0% {color: #000000; background-color: #2a2a2a00;}
+    50% {color: #fff; background-color: #83838380;}
+    100% {color: #000000; background-color: #2a2a2a00;}
+  }
+
+
+@media only screen and (max-width: 640px){
+    .Nav{
+        display: flex;
+        flex-direction: row;
+        height: 15vw;
+    }
+    .NavLogoContainer{
+        margin-right: auto;
+        margin-left: 2%;
+    }
+    .NavLogoContainer p{
+        font-size: 4vw;
+        margin-left: auto;
+        font-family: 'Noto Serif', serif;
+    }
+
+    .navLinksContainer{
+        margin-left: auto;
+        margin-right: 2%;
+    }
+    .navLinksContainer a {
+        margin:1.5em;
+        margin-left: auto;
+    }
+
+    .dp::after {
+        margin-top: -15vw;
+      }
+      .da::after {
+        margin-top: -12vw;
+        margin-left: 1vw;
+        width: 6em;
+        height: 3em;
+      }
+    
+}
+

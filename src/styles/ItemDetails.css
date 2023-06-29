@@ -1,0 +1,101 @@
+.itemDetailContainer{
+    font-family: 'Noto Serif', serif;
+    border-radius: 8px;
+    border: 1px solid rgb(201, 201, 201);
+    margin: 3vw 3vw 3vw 3vw;
+
+    box-shadow: 15px 12px 8px 0px rgba(201, 201, 201, 0.25);
+    -webkit-box-shadow: 15px 12px 8px 0px rgba(201, 201, 201, 0.25);
+    -moz-box-shadow: 15px 12px 8px 0px rgba(201, 201, 201, 0.25);
+    transition: 0.5s;
+}
+
+.itemDetailContainer:hover{
+    border: 1px solid rgb(255, 187, 0);
+    box-shadow: 15px 12px 0px 0px rgba(255, 187, 0, 0.48);
+    -webkit-box-shadow: 15px 12px 0px 0px rgba(255, 187, 0, 0.48);
+    -moz-box-shadow: 15px 12px 0px 0px rgba(255, 187, 0, 0.48);
+}
+
+.itemsDetails{
+    display: flex;
+    /* border-bottom: 1px solid rgb(255, 187, 0); */
+    border-right: 1px solid rgb(201, 201, 201);
+    margin: 2em 8% 0 8%;
+    transition: 1s;
+}
+
+.itemsDetails_ch1{
+    width:fit-content;
+    height: fit-content;
+}
+.itemsDetails_ch2{
+    margin: 0em 0 0 2em;
+    padding-top: 0em;
+    width:fit-content;
+    height: fit-content;
+}
+.itemsDetails_ch2 p{
+    font-size: 1.1em;
+    margin: 0.3em 0 0.3em;
+    color: rgb(70, 70, 70);
+}
+
+.itemsDetails_ch2 p:first-child{
+    color: black;
+    font-size: 2em;
+    font-weight: 600;
+    margin: 0em;
+}
+
+.itemsDetails_ch2 span{
+    color: rgb(199, 146, 0);
+}
+
+.preview{
+    border: 1px solid rgb(201, 201, 201);
+    width: 10em;
+}
+
+.PayFormContainer{
+    border-top: 1px solid rgb(201, 201, 201);
+    /* background-color: aqua; */
+    margin: 2em 4% 0 4%;
+    transition: 1s;
+}
+
+.itemDetailContainer:hover .PayFormContainer {
+    border-top: 1px solid rgb(255, 187, 0);
+}
+.itemDetailContainer:hover .itemsDetails {
+    border-right: 1px solid rgb(255, 187, 0);
+}
+
+@media only screen and (max-width: 640px){
+    .itemDetailContainer{
+        border-radius: 8px;
+        border: 1px solid rgb(201, 201, 201);
+        margin: 6vw 6vw 6vw 4.5vw;
+    }
+
+    .itemsDetails{
+        flex-direction: column;
+        border-right: 0px solid rgb(201, 201, 201);
+    }
+
+    .itemsDetails_ch1{
+        margin: 0 auto 0 auto;
+    }
+
+    .itemsDetails_ch2{
+        margin: 0em 0 0 0em;
+        padding-top: 1em;
+    }
+    
+    .preview{
+        width: 14em;
+    }
+    .itemDetailContainer:hover .itemsDetails {
+        border-right: 0px solid rgb(255, 187, 0);
+    }
+}

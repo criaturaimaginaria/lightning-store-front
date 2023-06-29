@@ -1,0 +1,31 @@
+{
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "/env.js",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
+        ]
+      }
+    ],
+    "environment": {
+      "REACT_APP_API_KEY": "https://lightning-store.onrender.com/newinvoice",
+      "REACT_APP_API_URL": "https://lightning-store.onrender.com/status"
+    }
+  }
+}
